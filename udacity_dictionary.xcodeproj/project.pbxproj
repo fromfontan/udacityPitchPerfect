@@ -14,6 +14,12 @@
 		CC1F21671B825162002778A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1F21661B825162002778A5 /* Images.xcassets */; };
 		CC1F216A1B825162002778A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1F21681B825162002778A5 /* LaunchScreen.xib */; };
 		CC1F21761B825162002778A5 /* udacity_dictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1F21751B825162002778A5 /* udacity_dictionaryTests.m */; };
+		CC1F21801B825272002778A5 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1F217F1B825272002778A5 /* microphone.png */; };
+		CC1F21821B82527D002778A5 /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1F21811B82527D002778A5 /* microphone@2x.png */; };
+		CC1F21841B8252D6002778A5 /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1F21831B8252D6002778A5 /* stop@2x.png */; };
+		CC1F21861B8252DC002778A5 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1F21851B8252DC002778A5 /* stop.png */; };
+		CC1F21891B84D6F8002778A5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1F21881B84D6F8002778A5 /* PlayerViewController.m */; };
+		CC1F218C1B84DD10002778A5 /* RecordedAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1F218B1B84DD10002778A5 /* RecordedAudio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,14 @@
 		CC1F216F1B825162002778A5 /* udacity_dictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = udacity_dictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1F21741B825162002778A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC1F21751B825162002778A5 /* udacity_dictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = udacity_dictionaryTests.m; sourceTree = "<group>"; };
+		CC1F217F1B825272002778A5 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		CC1F21811B82527D002778A5 /* microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@2x.png"; sourceTree = "<group>"; };
+		CC1F21831B8252D6002778A5 /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
+		CC1F21851B8252DC002778A5 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		CC1F21871B84D6F8002778A5 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		CC1F21881B84D6F8002778A5 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		CC1F218A1B84DD10002778A5 /* RecordedAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordedAudio.h; sourceTree = "<group>"; };
+		CC1F218B1B84DD10002778A5 /* RecordedAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedAudio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +99,15 @@
 				CC1F215E1B825162002778A5 /* AppDelegate.m */,
 				CC1F21601B825162002778A5 /* ViewController.h */,
 				CC1F21611B825162002778A5 /* ViewController.m */,
+				CC1F218A1B84DD10002778A5 /* RecordedAudio.h */,
+				CC1F218B1B84DD10002778A5 /* RecordedAudio.m */,
+				CC1F21871B84D6F8002778A5 /* PlayerViewController.h */,
+				CC1F21881B84D6F8002778A5 /* PlayerViewController.m */,
 				CC1F21631B825162002778A5 /* Main.storyboard */,
+				CC1F217F1B825272002778A5 /* microphone.png */,
+				CC1F21811B82527D002778A5 /* microphone@2x.png */,
+				CC1F21831B8252D6002778A5 /* stop@2x.png */,
+				CC1F21851B8252DC002778A5 /* stop.png */,
 				CC1F21661B825162002778A5 /* Images.xcassets */,
 				CC1F21681B825162002778A5 /* LaunchScreen.xib */,
 				CC1F21591B825162002778A5 /* Supporting Files */,
@@ -200,8 +222,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC1F21651B825162002778A5 /* Main.storyboard in Resources */,
+				CC1F21801B825272002778A5 /* microphone.png in Resources */,
+				CC1F21841B8252D6002778A5 /* stop@2x.png in Resources */,
+				CC1F21861B8252DC002778A5 /* stop.png in Resources */,
 				CC1F216A1B825162002778A5 /* LaunchScreen.xib in Resources */,
 				CC1F21671B825162002778A5 /* Images.xcassets in Resources */,
+				CC1F21821B82527D002778A5 /* microphone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC1F21621B825162002778A5 /* ViewController.m in Sources */,
+				CC1F21891B84D6F8002778A5 /* PlayerViewController.m in Sources */,
 				CC1F215F1B825162002778A5 /* AppDelegate.m in Sources */,
 				CC1F215C1B825162002778A5 /* main.m in Sources */,
+				CC1F218C1B84DD10002778A5 /* RecordedAudio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = udacity_dictionary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = udacity_dictionary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +446,7 @@
 				CC1F217B1B825162002778A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC1F217C1B825162002778A5 /* Build configuration list for PBXNativeTarget "udacity_dictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +455,7 @@
 				CC1F217E1B825162002778A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
