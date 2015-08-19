@@ -75,22 +75,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-FX-2Ek">
-                                <rect key="frame" x="277" y="285" width="37" height="30"/>
-                                <state key="normal" title="PLAY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWW-iw-Ato">
+                                <rect key="frame" x="190" y="72" width="100" height="100"/>
+                                <state key="normal" image="chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playButtonPressed:" destination="53J-hg-ZGZ" eventType="touchUpInside" id="T2m-QV-qLk"/>
+                                    <action selector="chipmunkAction:" destination="53J-hg-ZGZ" eventType="touchUpInside" id="OcJ-99-Umh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-gF-Z7T">
+                                <rect key="frame" x="310" y="72" width="100" height="100"/>
+                                <state key="normal" image="fast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFast:" destination="53J-hg-ZGZ" eventType="touchUpInside" id="BhQ-nm-XaH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZS-lt-k9D">
+                                <rect key="frame" x="190" y="180" width="100" height="100"/>
+                                <state key="normal" image="slow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSlow:" destination="53J-hg-ZGZ" eventType="touchUpInside" id="VzD-j9-Oda"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrU-jX-d4X">
+                                <rect key="frame" x="310" y="180" width="100" height="100"/>
+                                <state key="normal" image="vader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vaderAction:" destination="53J-hg-ZGZ" eventType="touchUpInside" id="CJn-qu-TB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9s-8m-N19">
+                                <rect key="frame" x="250" y="480" width="100" height="100"/>
+                                <state key="normal" image="stop.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="53J-hg-ZGZ" eventType="touchUpInside" id="1Em-sC-ajo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="sL8-FX-2Ek" secondAttribute="centerX" constant="4.5" id="F3c-3D-RVH"/>
-                            <constraint firstAttribute="centerY" secondItem="sL8-FX-2Ek" secondAttribute="centerY" id="yVX-z2-fNu"/>
+                            <constraint firstItem="zZS-lt-k9D" firstAttribute="centerX" secondItem="kWW-iw-Ato" secondAttribute="centerX" id="2SF-J0-mbM"/>
+                            <constraint firstAttribute="centerX" secondItem="kWW-iw-Ato" secondAttribute="centerX" constant="60" id="Gfg-ze-zmH"/>
+                            <constraint firstItem="LI6-Zm-ZSS" firstAttribute="top" secondItem="L9s-8m-N19" secondAttribute="bottom" constant="20" id="Hk5-Qr-ru9"/>
+                            <constraint firstItem="lrU-jX-d4X" firstAttribute="top" secondItem="Kbv-gF-Z7T" secondAttribute="bottom" constant="8" id="Kwq-VZ-HhU"/>
+                            <constraint firstItem="Kbv-gF-Z7T" firstAttribute="top" secondItem="J6S-lk-Vjn" secondAttribute="bottom" constant="8" id="RiQ-vQ-qfJ"/>
+                            <constraint firstItem="kWW-iw-Ato" firstAttribute="top" secondItem="J6S-lk-Vjn" secondAttribute="bottom" constant="8" id="ThE-Xp-zqf"/>
+                            <constraint firstItem="lrU-jX-d4X" firstAttribute="centerX" secondItem="Kbv-gF-Z7T" secondAttribute="centerX" id="UCF-xC-MQ6"/>
+                            <constraint firstItem="zZS-lt-k9D" firstAttribute="top" secondItem="kWW-iw-Ato" secondAttribute="bottom" constant="8" id="hSJ-Cl-OkR"/>
+                            <constraint firstAttribute="centerX" secondItem="L9s-8m-N19" secondAttribute="centerX" id="nzJ-hc-YVO"/>
+                            <constraint firstAttribute="centerX" secondItem="Kbv-gF-Z7T" secondAttribute="centerX" constant="-60" id="tqK-m1-bJr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="kWW-iw-Ato" id="Ccz-Ye-0Vs"/>
+                        <outlet property="stopButton" destination="L9s-8m-N19" id="Y3Y-oS-fix"/>
+                        <outlet property="vaderButton" destination="lrU-jX-d4X" id="lNh-ww-vVz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxV-Q1-3pJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +165,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="fast" width="100" height="100"/>
         <image name="microphone.png" width="100" height="100"/>
+        <image name="slow" width="100" height="100"/>
         <image name="stop.png" width="100" height="100"/>
+        <image name="vader" width="100" height="100"/>
     </resources>
 </document>
